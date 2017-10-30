@@ -27,6 +27,7 @@ info.update = function (props) {
 
 info.addTo(map);
 
+
 // get color depending on Human Development Index value
 function getColor(d) {
     return d > 0.8 ? '#003399' :

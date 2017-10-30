@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d145d4c-a1fe-4bfe-b50d-f63453440b06" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/countries.js" afterPath="$PROJECT_DIR$/js/countries.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/map.js" afterPath="$PROJECT_DIR$/js/map.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,25 +34,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="countries.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="countries.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/countries.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21912">
-              <caret line="86" column="71" lean-forward="false" selection-start-line="86" selection-start-column="71" selection-end-line="86" selection-end-column="71" />
+            <state relative-caret-position="270">
+              <caret line="131" column="72" lean-forward="false" selection-start-line="131" selection-start-column="72" selection-end-line="131" selection-end-column="72" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="map.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="map.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/map.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+            <state relative-caret-position="286">
+              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding>
-                <marker date="1509318319419" expanded="true" signature="263:269" ph="©" />
-                <marker date="1509318319419" expanded="true" signature="2464:2470" ph="©" />
-                <marker date="1509318319419" expanded="true" signature="2887:2898" ph="..." />
+                <marker date="1509319268728" expanded="true" signature="263:269" ph="©" />
+                <marker date="1509319268728" expanded="true" signature="2465:2471" ph="©" />
+                <marker date="1509319268728" expanded="true" signature="2888:2899" ph="..." />
               </folding>
             </state>
           </provider>
@@ -72,6 +73,7 @@
       <find>soma</find>
       <find>united</find>
       <find>uk</find>
+      <find>isla</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -82,8 +84,8 @@
       <list>
         <option value="$PROJECT_DIR$/css/styles.css" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/countries.js" />
         <option value="$PROJECT_DIR$/js/map.js" />
+        <option value="$PROJECT_DIR$/js/countries.js" />
       </list>
     </option>
   </component>
@@ -134,6 +136,10 @@
               <item name="relocation" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="relocation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -176,7 +182,7 @@
       <updated>1509170583822</updated>
       <workItem from="1509170591329" duration="3385000" />
       <workItem from="1509314139918" duration="697000" />
-      <workItem from="1509316778595" duration="901000" />
+      <workItem from="1509316778595" duration="3377000" />
     </task>
     <task id="LOCAL-00001" summary="The first">
       <created>1509314720821</created>
@@ -189,7 +195,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4983000" />
+    <option name="totallyTimeSpent" value="7459000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -258,9 +264,9 @@
         <state relative-caret-position="682">
           <caret line="31" column="17" lean-forward="false" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
           <folding>
-            <marker date="1509318319419" expanded="true" signature="263:269" ph="©" />
-            <marker date="1509318319419" expanded="true" signature="2464:2470" ph="©" />
-            <marker date="1509318319419" expanded="true" signature="2887:2898" ph="..." />
+            <marker date="1509319268728" expanded="true" signature="263:269" ph="©" />
+            <marker date="1509319268728" expanded="true" signature="2465:2471" ph="©" />
+            <marker date="1509319268728" expanded="true" signature="2888:2899" ph="..." />
           </folding>
         </state>
       </provider>
@@ -286,9 +292,9 @@
         <state relative-caret-position="527">
           <caret line="31" column="17" lean-forward="false" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
           <folding>
-            <marker date="1509318319419" expanded="true" signature="263:269" ph="©" />
-            <marker date="1509318319419" expanded="true" signature="2464:2470" ph="©" />
-            <marker date="1509318319419" expanded="true" signature="2887:2898" ph="..." />
+            <marker date="1509319268728" expanded="true" signature="263:269" ph="©" />
+            <marker date="1509319268728" expanded="true" signature="2465:2471" ph="©" />
+            <marker date="1509319268728" expanded="true" signature="2888:2899" ph="..." />
           </folding>
         </state>
       </provider>
@@ -317,23 +323,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/countries.js">
+    <entry file="file://$PROJECT_DIR$/js/map.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21912">
-          <caret line="86" column="71" lean-forward="false" selection-start-line="86" selection-start-column="71" selection-end-line="86" selection-end-column="71" />
-          <folding />
+        <state relative-caret-position="286">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <marker date="1509319268728" expanded="true" signature="263:269" ph="©" />
+            <marker date="1509319268728" expanded="true" signature="2465:2471" ph="©" />
+            <marker date="1509319268728" expanded="true" signature="2888:2899" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/map.js">
+    <entry file="file://$PROJECT_DIR$/js/countries.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-          <folding>
-            <marker date="1509318319419" expanded="true" signature="263:269" ph="©" />
-            <marker date="1509318319419" expanded="true" signature="2464:2470" ph="©" />
-            <marker date="1509318319419" expanded="true" signature="2887:2898" ph="..." />
-          </folding>
+        <state relative-caret-position="270">
+          <caret line="131" column="72" lean-forward="false" selection-start-line="131" selection-start-column="72" selection-end-line="131" selection-end-column="72" />
+          <folding />
         </state>
       </provider>
     </entry>
