@@ -5,7 +5,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
     '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
     'Imagery © <a href="http://mapbox.com">Mapbox</a>',
-    //id: 'mapbox.light'
+    //id: 'mapbox.dark'
     id: 'mapbox.emerald'
     //id: 'mapbox.high-contrast'
 }).addTo(map);
@@ -29,11 +29,28 @@ info.addTo(map);
 
 
 // get color depending on Human Development Index value
-function getColor(d) {
+function getColorOld(d) {
     return d > 0.8 ? '#003399' :
         d > 0.5  ? '#3072d9' :
             d > 0  ? '#a8c3ff' :
                 '#808080';
+}
+
+function getColor(d) {
+    return d > 0.9 ? '#003c00' :
+        d > 0.85  ? '#007f00' :
+        d > 0.80  ? '#00c400' :
+        d > 0.75  ? '#00f900' :
+        d > 0.70  ? '#d3ff00' :
+        d > 0.65  ? '#ffff00' :
+        d > 0.60  ? '#ffd215' :
+        d > 0.55  ? '#ffa83c' :
+        d > 0.50  ? '#ff852f' :
+        d > 0.45  ? '#ff5b00' :
+        d > 0.40  ? '#ff0000' :
+        d > 0.35  ? '#a70000' :
+        d > 0  ? '#a70000' :
+            '#808080';
 }
 
 function style(feature) {
@@ -100,7 +117,7 @@ var legend = L.control({position: 'bottomright'});
 legend.onAdd = function (map) {
 
     var div = L.DomUtil.create('div', 'info legend'),
-        grades = [1, 0.8, 0.5, 0.3],
+        grades = [1, 0.9, 0.85, 0.80, 0.75, 0.7, 0.65, 0.60, 0.55, 0.50, 0.45, 0.40],
         labels = [],
         from, to;
 
