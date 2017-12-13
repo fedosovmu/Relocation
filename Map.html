@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Map</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin=""/>
+    <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="css\mapstyles.css">
+
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="header"></div>
+    <div class="menu">
+        <div class="menu_item"><a href="#">Интерактивная карта</a></div>
+        <div class="menu_item"><a href="#">Работа</a></div>
+        <div class="menu_item"><a href="#">Жилье</a></div>
+        <div class="menu_item"><a href="#">Мои этапы</a></div>
+    </div>
+    <div class="content">
+        <div id='map'></div>
+        <script type="text/javascript" src="js/countries.js" ></script>
+        <script type="text/javascript" src="js/map.js" ></script>
+    </div>
+    <div class="info">
+        <h1>Информация о стране</h1>
+        <p><b>Индекс человеческого развития:</b> ???</p>
+        <p><b>Описание страны:</b> лол <br></p>
+    </div>
+</div>
+
+</body>
+</html>

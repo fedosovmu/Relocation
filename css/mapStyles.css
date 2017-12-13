@@ -1,0 +1,56 @@
+.container {
+    background-color: #282828;
+}
+
+.header {
+    background-color: #282828;
+    height: 42px;
+    width: 100%;
+}
+
+.menu {
+    display: block;
+    background-color: #78dfd6;
+    float: left;
+    padding: 30px 2%;
+    width: 11%;
+    height: 900px;
+}
+
+.menu_item {
+    padding: 10px 0;
+}
+
+.menu_item a {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+    float: right;
+    height: 900px;
+    width: 85%;
+}
+
+.info {
+    display: none;
+    background-color: black;
+    opacity: 0.9;
+    border-radius: 10px;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    width: 30%;
+    height: 80%;
+    z-index: 2;
+    color: white;
+    font-size: 18px;
+    padding: 20px 20px;
+}
+
+#map {
+    z-index: 1;
+}
