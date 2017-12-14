@@ -5,9 +5,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
     '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
     'Imagery © <a href="http://mapbox.com">Mapbox</a>',
-    //id: 'mapbox.dark'
     id: 'mapbox.emerald'
-    //id: 'mapbox.high-contrast'
 }).addTo(map);
 
 
@@ -90,9 +88,21 @@ function resetHighlight(e) {
 
 function zoomToFeature(e) {
     map.fitBounds(e.target.getBounds());
-    //e.target.bindPopup("<div class='message'><b>Hello world!</b><br>I am a popup.</div>").openPopup();
-    e.target.bindPopup("<b>" + e.target.feature.properties.name + "</b> <br> " + e.target.feature.properties.hdi).openPopup();
+    //e.target.bindPopup("<b>" + e.target.feature.properties.name + "</b> <br> " + e.target.feature.properties.hdi).openPopup();
+    e.target.bind(show_info_page()); // Информация о стране
 }
+
+function show_info_page() {
+    this.document.getElementById("info-page-content").innerHTML=
+        "<p><b>Индекс человеческого развития:</b> ?</p>" +
+        "<p><b>Описание страны:</b> ?<br></p>";
+    this.document.getElementById("info-page").style.display = 'block';
+}
+
+function hide_info_page () {
+    this.document.getElementById("info-page").style.display = 'none';
+}
+
 
 
 

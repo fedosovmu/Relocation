@@ -14,7 +14,7 @@
     float: left;
     padding: 30px 2%;
     width: 11%;
-    height: 900px;
+    height: 840px;
 }
 
 .menu_item {
@@ -35,7 +35,7 @@
     width: 85%;
 }
 
-.info {
+#info-page {
     display: none;
     background-color: black;
     opacity: 0.9;
@@ -49,6 +49,12 @@
     color: white;
     font-size: 18px;
     padding: 20px 20px;
+}
+
+#close-info-page-button {
+    position: absolute;
+    top: 2%;
+    left: 85%;
 }
 
 #map {
