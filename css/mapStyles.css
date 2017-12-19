@@ -35,28 +35,75 @@
     width: 85%;
 }
 
+#map {
+    z-index: 1;
+}
+
 #info-page {
     display: none;
-    background-color: black;
-    opacity: 0.9;
-    border-radius: 10px;
+    background-color: white;
+    opacity: 1;
+    border-radius: 1px;
     position: absolute;
     top: 10%;
     left: 40%;
     width: 30%;
     height: 80%;
     z-index: 2;
-    color: white;
+    color: black;
     font-size: 18px;
+}
+
+#info-page_content {
     padding: 20px 20px;
+    border: 1px solid grey;
 }
 
-#close-info-page-button {
+.info-page_head {
+    weight: 100%;
+    background-color: #a5e4e0;
+    padding: 10px;
+    color: white;
+    font-size: 24px;
+}
+.info-page_close {
     position: absolute;
-    top: 2%;
-    left: 85%;
+    top: 7px;
+    right: 7px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+}
+.info-page_close:hover {
+    opacity: 1;
+}
+.info-page_close:before, .info-page_close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+}
+.info-page_close:before {
+    transform: rotate(45deg);
+}
+.info-page_close:after {
+    transform: rotate(-45deg);
 }
 
-#map {
-    z-index: 1;
+
+.info-page_menu {
+
+}
+.info-page_menu ul {
+    margin: 0; /* Обнуляем значение отступов */
+    padding: 4px; /* Значение полей */
+}
+.info-page_menu ul li {
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+    border: 1px solid #000; /* Рамка вокруг текста */
+    padding: 3px; /* Поля вокруг текста */
+    color: red;
 }

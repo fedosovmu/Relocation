@@ -9,8 +9,8 @@
     <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin=""/>
-    <link rel="stylesheet" href="css\styles.css">
-    <link rel="stylesheet" href="css\mapstyles.css">
+    <link rel="stylesheet" href="css\styles.css" />
+    <link rel="stylesheet" href="css\mapstyles.css" />
 
     <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
 
@@ -31,9 +31,19 @@
         <script type="text/javascript" src="js/map.js" ></script>
     </div>
     <div id="info-page">
-        <button id="close-info-page-button" onclick="hide_info_page()">Закрыть</button>
-        <h1>Информация о стране</h1>
-        <div id="info-page-content">
+        <div class="info-page_head">
+            | RUSSIA
+            <span class="info-page_close" onclick="hide_info_page()"></span>
+        </div>
+        <div lass="info-page_menu">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>
+        <div id="info-page_content">
+            <h1>Информация о стране</h1>
             <p><b>Индекс человеческого развития:</b> -</p>
             <p><b>Описание страны:</b> -<br></p>
         </div>

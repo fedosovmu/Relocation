@@ -19,8 +19,8 @@ info.onAdd = function (map) {
 };
 
 info.update = function (props) {
-    this._div.innerHTML = '<h4>Индекс человеческого развития</h4>' +  (props ?
-        '<b>' + props.name + '</b><br />' + props.hdi : 'Наведите курсор на страну');
+    this._div.innerHTML = '<h4>Индекс человеческого развития</h4>' + (props ?
+        '<b>' + props.name + '</b> - ' + props.hdi : 'Наведите курсор на страну');
 };
 
 info.addTo(map);
@@ -79,8 +79,6 @@ function highlightFeature(e) {
     info.update(layer.feature.properties);
 }
 
-var geojson;
-
 function resetHighlight(e) {
     geojson.resetStyle(e.target);
     info.update();
@@ -89,12 +87,13 @@ function resetHighlight(e) {
 function zoomToFeature(e) {
     map.fitBounds(e.target.getBounds());
     //e.target.bindPopup("<b>" + e.target.feature.properties.name + "</b> <br> " + e.target.feature.properties.hdi).openPopup();
-    e.target.bind(show_info_page()); // Информация о стране
+    e.target.bind(show_info_page(e)); // Информация о стране
 }
 
-function show_info_page() {
-    this.document.getElementById("info-page-content").innerHTML=
-        "<p><b>Индекс человеческого развития:</b> ?</p>" +
+function show_info_page(e) {
+    this.document.getElementById("info-page_content").innerHTML=
+        "<h1>" + e.target.feature.properties.name + "</h1>" +
+        "<p><b>Индекс человеческого развития:</b> " + e.target.feature.properties.hdi + "</p>" +
         "<p><b>Описание страны:</b> ?<br></p>";
     this.document.getElementById("info-page").style.display = 'block';
 }
@@ -110,7 +109,8 @@ function onEachFeature(feature, layer) {
     layer.on({
         mouseover: highlightFeature,
         mouseout: resetHighlight,
-        click: zoomToFeature
+        click: zoomToFeature,
+        moveend: info.update(layer.feature.properties) // <-----------------
     });
 }
 
