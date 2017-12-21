@@ -90,19 +90,6 @@ function zoomToFeature(e) {
     e.target.bind(show_info_page(e)); // Информация о стране
 }
 
-function show_info_page(e) {
-    this.document.getElementById("info-page_content").innerHTML=
-        "<h1>" + e.target.feature.properties.name + "</h1>" +
-        "<p><b>Индекс человеческого развития:</b> " + e.target.feature.properties.hdi + "</p>" +
-        "<p><b>Описание страны:</b> ?<br></p>";
-    this.document.getElementById("info-page").style.display = 'block';
-}
-
-function hide_info_page () {
-    this.document.getElementById("info-page").style.display = 'none';
-}
-
-
 function onEachFeature(feature, layer) {
     layer.on({
         mouseover: highlightFeature,
