@@ -20,15 +20,20 @@
 <div class="container">
     <div class="header"></div>
     <div class="menu">
-        <div class="menu_item"><a href="#">Интерактивная карта</a></div>
-        <div class="menu_item"><a href="#">Работа</a></div>
-        <div class="menu_item"><a href="#">Жилье</a></div>
-        <div class="menu_item"><a href="#">Мои этапы</a></div>
+        <input type="text" id="search" autocomplete="off" onkeyup="search_keyup(this)"/>
+        <div id="search_result">Russia</div>
+        <div style="padding: 20px 0px">
+            <div class="menu_item"><a href="#">Интерактивная карта</a></div>
+            <div class="menu_item"><a href="#">Работа</a></div>
+            <div class="menu_item"><a href="#">Жилье</a></div>
+            <div class="menu_item"><a href="#">Мои этапы</a></div>
+        </div>
     </div>
     <div class="content">
         <div id='map'></div>
         <script type="text/javascript" src="js/countries.js" ></script>
         <script type="text/javascript" src="js/map.js" ></script>
+        <script type="text/javascript" src="js/map-page.js"></script>
     </div>
     <div id="info-page">
         <div class="info-page_head">

@@ -103,14 +103,11 @@ function hide_info_page () {
 }
 
 
-
-
 function onEachFeature(feature, layer) {
     layer.on({
         mouseover: highlightFeature,
         mouseout: resetHighlight,
         click: zoomToFeature,
-        moveend: info.update(layer.feature.properties) // <-----------------
     });
 }
 

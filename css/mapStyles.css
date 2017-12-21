@@ -107,3 +107,30 @@
     padding: 3px; /* Поля вокруг текста */
     color: red;
 }
+
+
+
+#search{
+    width: 90%;
+    height: 35px;
+    background: #2b303b;
+    border: none;
+    font-size: 10pt;
+    color: #fff;
+    padding-left: 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#search_result {
+    display: none;
+    width: 85%;
+    padding: 10px 10px;
+    background-color: #434A5B;
+    border-radius: 5px;
+}
+
+.search_link {
+    color: white;
+}
