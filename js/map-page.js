@@ -24,7 +24,7 @@ function showContent() {
             "<h1>" + properties.name + "</h1>" +
             "<p><b>Индекс человеческого развития:</b> " + properties.hdi + "</p>" +
             "<p><b>Описание страны:</b> ?<br></p>" +
-            "<b>Параметры:</b> id: " + currentCountryId + ", properties: " + JSON.stringify(properties);
+            "<b>Параметры:</b> id: " + currentCountryId + "<br>properties: " + JSON.stringify(properties);
     } else if (infoPageMode == 'works') {
         // ------------- РАБОТА В СТРАНЕ -----------------------------
         this.document.getElementById("info-page_content").innerHTML = "Работа в стране, " + properties.name + " [" + currentCountryId + "]";

@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0d145d4c-a1fe-4bfe-b50d-f63453440b06" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/countries.js" afterPath="$PROJECT_DIR$/js/countries.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/map-page.js" afterPath="$PROJECT_DIR$/js/map-page.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/map.js" afterPath="$PROJECT_DIR$/js/map.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,8 +28,8 @@
       <file leaf-file-name="countries.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/countries.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="40" />
+            <state relative-caret-position="-2486">
+              <caret line="169" column="86" lean-forward="false" selection-start-line="169" selection-start-column="86" selection-end-line="169" selection-end-column="86" />
               <folding />
             </state>
           </provider>
@@ -49,17 +49,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="map-page.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="map-page.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/map-page.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="48" lean-forward="false" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+            <state relative-caret-position="594">
+              <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Map.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Map.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Map.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="674">
@@ -110,13 +110,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/css/styles.css" />
-        <option value="$PROJECT_DIR$/js/countries.js" />
         <option value="$PROJECT_DIR$/pages/Map.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/sandbox.html" />
         <option value="$PROJECT_DIR$/Map.html" />
         <option value="$PROJECT_DIR$/css/mapStyles.css" />
         <option value="$PROJECT_DIR$/js/map.js" />
+        <option value="$PROJECT_DIR$/js/countries.js" />
         <option value="$PROJECT_DIR$/js/map-page.js" />
       </list>
     </option>
@@ -225,7 +225,7 @@
       <workItem from="1513831781944" duration="12471000" />
       <workItem from="1513860589438" duration="3428000" />
       <workItem from="1513866007270" duration="32000" />
-      <workItem from="1513866097625" duration="26824000" />
+      <workItem from="1513866097625" duration="28781000" />
     </task>
     <task id="LOCAL-00001" summary="The first">
       <created>1509314720821</created>
@@ -311,11 +311,18 @@
       <option name="project" value="LOCAL" />
       <updated>1513904934352</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Фак еаааааа, GET запросы готовы">
+      <created>1513910062351</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1513910062351</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94938000" />
+    <option name="totallyTimeSpent" value="96895000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -376,7 +383,8 @@
     <MESSAGE value="Поиск готов" />
     <MESSAGE value="Меню готово" />
     <MESSAGE value="Меню готово, УРА!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Меню готово, УРА!" />
+    <MESSAGE value="Фак еаааааа, GET запросы готовы" />
+    <option name="LAST_COMMIT_MESSAGE" value="Фак еаааааа, GET запросы готовы" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -794,14 +802,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/countries.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/map.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
@@ -814,6 +814,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/countries.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2486">
+          <caret line="169" column="86" lean-forward="false" selection-start-line="169" selection-start-column="86" selection-end-line="169" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/map-page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Map.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="674">
@@ -821,14 +837,6 @@
           <folding>
             <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/map-page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="48" lean-forward="false" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
