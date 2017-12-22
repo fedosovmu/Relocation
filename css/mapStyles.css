@@ -69,10 +69,10 @@
 .info-page_close {
     position: absolute;
     top: 7px;
-    right: 7px;
-    width: 32px;
-    height: 32px;
-    opacity: 0.3;
+    right: 11px;
+    width: 28px;
+    height: 28px;
+    opacity: 0.5;
 }
 .info-page_close:hover {opacity: 1;  }
 .info-page_close:before, .info-page_close:after {
@@ -81,7 +81,7 @@
     content: ' ';
     height: 33px;
     width: 2px;
-    background-color: #333;
+    background-color: white;
 }
 .info-page_close:before {transform: rotate(45deg);}
 .info-page_close:after {transform: rotate(-45deg);}
@@ -132,7 +132,7 @@
     float: right;
 }
 #works-item {
-    width: 33%;
+    width: 35%;
 }
 
 
