@@ -1,9 +1,10 @@
 
 var currentCountryProperties = "";
 var currentCountryId = "";
-function show_info_page(e) {
-    currentCountryProperties = e.target.feature.properties;
-    currentCountryId = e.target.feature.id;
+function show_info_page(id) {
+    history.replaceState(null,null,'?country='+ id); // меняем айдишник в адресной строке
+    currentCountryProperties = getCountryProperties(id);
+    currentCountryId = id;
     showContent();
 
     this.document.getElementById("info-page-name").innerHTML = '| ' + currentCountryProperties.name.toUpperCase(); // Присваеваем заголовку имя страны
@@ -11,6 +12,7 @@ function show_info_page(e) {
 }
 
 function hide_info_page () {
+    history.replaceState(null,null,'?country=ALL');
     this.document.getElementById("info-page").style.display = 'none';
 }
 
@@ -33,17 +35,16 @@ function showContent() {
 }
 
 
+function getCountryProperties(id) {
+    var result = "";
+    countriesData[0].features.forEach(function(item) {
+        if (item.id == id.toUpperCase()) {
+            result = item.properties;
+        }
+    });
+    return result;
+}
 
-// <--- Обрабатываем гет
-//var get = location.search;
-//document.title='lol';
-//show_info_page()
-//countriesData[0].features.forEach(function(item) {
-//    var name = item.properties.name;
-//    if (name = 'Russia') {
-//       alert(name);
-//    }
-//});
 
 
 
@@ -91,4 +92,17 @@ function homesItemClick() {
     infoPageMode = 'homes';
     resetSelection();
     document.getElementById("homes-item").className='menu_selected';
+}
+
+
+// <--- Обрабатываем GET
+window.onload = function ready() {
+    var getRequest  = location.search;
+    if (getRequest != '') {
+        var id = getRequest.split('?')[1].split('=')[1].toUpperCase();
+        currentCountryProperties = getCountryProperties(id);
+        currentCountryId = id;
+        var infoPageMode = 'info';
+        show_info_page(id);
+    }
 }

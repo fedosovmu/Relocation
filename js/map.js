@@ -87,7 +87,7 @@ function resetHighlight(e) {
 
 function zoomToFeature(e) {
     map.fitBounds(e.target.getBounds());
-    e.target.bind(show_info_page(e)); // Информация о стране
+    e.target.bind(show_info_page(e.target.feature.id)); // Информация о стране
 }
 
 function onEachFeature(feature, layer) {
