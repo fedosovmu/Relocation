@@ -49,7 +49,7 @@
     left: 40%;
     width: 30%;
     min-width: 500px;
-    height: 80%;
+    height: 85%;
     z-index: 2;
     color: black;
     font-size: 18px;
@@ -57,7 +57,6 @@
 
 #info-page_content {
     padding: 20px 20px;
-    border: 1px solid grey;
 }
 
 .info-page_head {
@@ -75,9 +74,7 @@
     height: 32px;
     opacity: 0.3;
 }
-.info-page_close:hover {
-    opacity: 1;
-}
+.info-page_close:hover {opacity: 1;  }
 .info-page_close:before, .info-page_close:after {
     position: absolute;
     left: 15px;
@@ -86,29 +83,68 @@
     width: 2px;
     background-color: #333;
 }
-.info-page_close:before {
-    transform: rotate(45deg);
-}
-.info-page_close:after {
-    transform: rotate(-45deg);
-}
+.info-page_close:before {transform: rotate(45deg);}
+.info-page_close:after {transform: rotate(-45deg);}
+
 
 
 .info-page_menu {
-
-}
-.info-page_menu ul {
-    margin: 0; /* Обнуляем значение отступов */
-    padding: 4px; /* Значение полей */
-}
-.info-page_menu ul li {
-    display: inline; /* Отображать как строчный элемент */
-    margin-right: 5px; /* Отступ слева */
-    border: 1px solid #000; /* Рамка вокруг текста */
-    padding: 3px; /* Поля вокруг текста */
-    color: red;
+    background-color: #4d4d4d;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 166px;
 }
 
+.info-page_menu li {
+    display: inline-block; /* Отображать как строчный элемент */
+    width: 32%;
+    height: 100%;
+}
+
+.menu_selected {
+    background-color: #424242;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+}
+
+.info-page_button {
+    background-color: rgba(255, 255, 255, 0);
+    border: 0px;
+    height: 100%;
+    width: 100%;
+
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-family: Arial;
+    vertical-align: middle;
+    outline: none;
+}
+.info-page_button:active {
+    background-color: #424242;
+    box-shadow: inset 0 0 40px rgba(0,0,0,0.5);
+}
+
+
+
+#homes-item {
+    float: right;
+}
+#works-item {
+    width: 33%;
+}
+
+
+.info-page_basement {
+    background-color: #d3f2f5;
+    height: 15px;
+    width: 100%;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
 
 
 #search{

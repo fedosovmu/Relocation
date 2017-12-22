@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Песочница</title>
+    <!------------------------------------------------------------------------>
+    <!-- ЭТА СТРАНИЦА СОЗДАНА ИСКЛЮЧИТЕЛЬНО ДЛЯ ТЕСТИРОВНИЯ РАЗЛИЧНОЙ ФИГНИ -->
+    <!------------------------------------------------------------------------>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/themes/sunny/jquery-ui.css">
+    <style type="text/css">
+        div.dragElement {font-size: large; border: thin solid black; padding:16px;
+            width: 8em; text-align: center; background-color: lightgray; margin: 4px }
+        #container { border: medium double black; width: 700px; height: 450px}
+    </style>
+    <script type="text/javascript">
+        $(function() {
+
+            $('.dragElement').draggable({
+                containment: "parent"
+            }).filter('#dragH').draggable("option", "axis", "x");
+
+        });
+    </script>
+</head>
+<body>
+<div id="container">
+    <div id="dragH" class="dragElement ui-widget ui-corner-all ui-state-error">
+        Перетащить по горизонтали
+    </div>
+    <div class="dragElement ui-widget ui-corner-all ui-state-error">
+        Перетащить внутри родителя
+    </div>
+</div>
+</body>
+</html>

@@ -36,14 +36,14 @@
     </div>
     <div id="info-page">
         <div class="info-page_head">
-            | RUSSIA
+            <span id="info-page-name">| RUSSIA</span>
             <span class="info-page_close" onclick="hide_info_page()"></span>
         </div>
-        <div lass="info-page_menu">
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
+        <div>
+            <ul class="info-page_menu">
+                <li id="info-item" class=""><button class="info-page_button" onmousedown="infoItemClick()">ОСНОВНАЯ ИНФОРМАЦИЯ</button></li>
+                <li id="works-item" ><button class="info-page_button" onmousedown="worksItemClick()">РАБОТА</button></li>
+                <li id="homes-item" ><button class="info-page_button" onmousedown="homesItemClick()">ЖИЛЬЕ</button></li>
             </ul>
         </div>
         <div id="info-page_content">
@@ -51,6 +51,7 @@
             <p><b>Индекс человеческого развития:</b> -</p>
             <p><b>Описание страны:</b> -<br></p>
         </div>
+        <div class="info-page_basement"></div>
     </div>
 </div>
 
