@@ -27,10 +27,13 @@ function showContent() {
             "<b>Параметры:</b> id: " + currentCountryId + "<br>properties: " + JSON.stringify(properties);
     } else if (infoPageMode == 'works') {
         // ------------- РАБОТА В СТРАНЕ -----------------------------
-        this.document.getElementById("info-page_content").innerHTML = "Работа в стране, " + properties.name + " [" + currentCountryId + "]";
+        this.document.getElementById("info-page_content").innerHTML = "РАБОТА в стране, " + properties.name + " [" + currentCountryId + "]";
     } else if (infoPageMode == 'homes') {
         // ------------- ЖИЛЬЕ В СТРАНЕ ------------------------------
-        this.document.getElementById("info-page_content").innerHTML = "Жилье в стране, " + properties.name + " [" + currentCountryId + "]";
+        this.document.getElementById("info-page_content").innerHTML = "ЖИЛЬЕ в стране, " + properties.name + " [" + currentCountryId + "]";
+    } else if (infoPageMode == 'visas') {
+        // ------------- ВИЗЫ В СТРАНЕ -------------------------------
+        this.document.getElementById("info-page_content").innerHTML = "ВИЗЫ в стране, " + properties.name + " [" + currentCountryId + "]";
     } else alert("ОШИБКА!");
 }
 
@@ -73,6 +76,7 @@ function resetSelection() {
     document.getElementById("info-item").className="";
     document.getElementById("works-item").className="";
     document.getElementById("homes-item").className="";
+    document.getElementById("visas-item").className="";
     showContent();
 }
 
@@ -92,6 +96,12 @@ function homesItemClick() {
     infoPageMode = 'homes';
     resetSelection();
     document.getElementById("homes-item").className='menu_selected';
+}
+
+function visasItemClick() {
+    infoPageMode = 'visas';
+    resetSelection();
+    document.getElementById("visas-item").className='menu_selected';
 }
 
 
