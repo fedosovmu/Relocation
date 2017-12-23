@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css\startStyles.css" />
 </head>
 <body>
-    <img class="start-page_image" src="images/backgrounds/4.png">
+    <img id="start=page_image-id" class="start-page_image" src="">
     <div class="start-page_back">
         <div class="start-page_content">
             Испытываешь трудности с переездом заграницу?<br>
@@ -14,9 +14,14 @@
             <span class="start-page_logo-text">TimeToGo</span> <br>
             <img src="images/logo.png">
         </div>
-        <div class="start-page_link">
-            <a>Продолжить</a>
+        <div style="margin-top: 6%">
+            <a class="start-page_link" href="Map.html">Подробнее ></a>
         </div>
     </div>
+    <script>
+        // ----------------- Данный скрипт случайным образом устанавливает стартовую картинку ---------------------
+        var rand = Math.floor(Math.random() * 5) + 1;
+        this.document.getElementById("start=page_image-id").src = "images/backgrounds/" + rand + ".png";
+    </script>
 </body>
 </html>

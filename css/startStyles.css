@@ -25,7 +25,6 @@
     color: white;
     line-height: 1.2;
     margin-top: 18%;
-    border: 1px solid black;
 }
 
 .start-page_logo-text {
@@ -34,6 +33,9 @@
 }
 
 .start-page_link {
-    margin-top: 10%;
-    border: 1px solid black;
+    font-size: 30px;
+    font-family: Arial;
+    text-decoration: none;
+    line-height: 1.2;
+    color: white;
 }
