@@ -1,16 +1,17 @@
 
 
-
 // <--- Обрабатываем GET запрос
+var currentCountryId = "";
 window.onload = function ready() {
     var getRequest = location.search;
 
     if (getRequest != '') {
-        var name = getRequest.split('?')[1].split('=')[1].toUpperCase();
-        if (name == 'ALL') {
+        var id = getRequest.split('?')[1].split('=')[1].toUpperCase();
+        if (id == 'ALL') {
             document.getElementById("extend-content").style.display = 'block';
         } else {
-            document.getElementById("search-head").innerHTML = 'Поиск ' + name + '';
+            currentCountryId = id;
+            document.getElementById("search-head").innerHTML = 'Поиск ' + id + '';
         }
     }
 }

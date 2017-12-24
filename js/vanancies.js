@@ -3,9 +3,9 @@
 // var vacanciesData = { Твой запрос };
 // ------------------------------------------------------------------------------------------------------------
 // ДАННЫЕ: (id страны, город, Название вакансии, Описание, Ссылка на источник,
-// Зарплата [Возможно стоит взять диапазон, например 200-250$], Когда была опубликована )
+// Зарплата [Возможно стоит взять диапазон, например 200-250$, хотя лучьше не надо], Дата публикации предложения )
 var vacanciesData =
-    [{id: 'RUS', city: 'New York', name: 'Senior Python Developer', desc: '', href: '', salary: 1800, posted: 'December 24, 2017'},
+    [{id: 'RUS', city: 'New York', company: 'Gooten, Inc.', name: 'Senior Python Developer', desc: '', href: '', salary: 1800, posted: 'December 24, 2017'},
     {id: 'RUS', name: 'Automation Tools Programmer', desc: '', href: '', salary: 2100},
     {id: 'RUS', name: 'Analyst', desc: '', href: '', salary: 1900},
     {id: 'RUS', name: 'Python Programmer Job', desc: '', href: '', salary: 10000},
