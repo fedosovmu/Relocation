@@ -41,11 +41,12 @@ function showContent() {
     } else if (infoPageMode == 'homes') {
         // <--- ЖИЛЬЕ В СТРАНЕ ---------
         this.document.getElementById("info-page_homes-content").style.display = 'block';
-        this.document.getElementById("info-page_homes-content").innerHTML = "ЖИЛЬЕ в стране, " + properties.name + " [" + currentCountryId + "]";
+        this.document.getElementById("info-page_homes-content").innerHTML = "<img src='images/homes-prototype.png' style='width: 100%'>";
     } else if (infoPageMode == 'visas') {
         // <--- ВИЗЫ В СТРАНЕ ----------
         this.document.getElementById("info-page_visas-content").style.display = 'block';
-        this.document.getElementById("info-page_visas-content").innerHTML = "ВИЗЫ в стране, " + properties.name + " [" + currentCountryId + "]";
+        this.document.getElementById("info-page_visas-content").style.background.color = "#33251a";
+        this.document.getElementById("info-page_visas-content").innerHTML = "<img src='images/visas-prototype.png' style='width: 100%'>";
     } else alert("ОШИБКА!");
 }
 
