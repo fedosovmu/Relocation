@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d145d4c-a1fe-4bfe-b50d-f63453440b06" name="Default" comment="Наконец-то красивый поиск!">
+    <list default="true" id="0d145d4c-a1fe-4bfe-b50d-f63453440b06" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobs.html" afterPath="$PROJECT_DIR$/Jobs.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Main.html" afterPath="$PROJECT_DIR$/Main.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/jobsStyles.css" afterPath="$PROJECT_DIR$/css/jobsStyles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/mainStyles.css" afterPath="$PROJECT_DIR$/css/mainStyles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jobs.js" afterPath="$PROJECT_DIR$/js/jobs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,11 +16,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="69" column="0" lean-forward="true" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+              <folding>
+                <marker date="1514101605135" expanded="true" signature="2539:2589" ph="..." />
+                <marker date="1514101605135" expanded="true" signature="2648:2659" ph="..." />
+                <marker date="1514101605135" expanded="true" signature="2960:2995" ph="..." />
+                <marker date="1514101605135" expanded="true" signature="2960:3012" ph="..." />
+                <marker date="1514101605135" expanded="true" signature="3071:3082" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Jobs.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Jobs.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="50" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="50" />
+            <state relative-caret-position="462">
+              <caret line="21" column="44" lean-forward="false" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -32,8 +45,8 @@
       <file leaf-file-name="jobsStyles.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/jobsStyles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="42" column="15" lean-forward="false" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
+            <state relative-caret-position="300">
+              <caret line="73" column="1" lean-forward="true" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -42,8 +55,8 @@
       <file leaf-file-name="jobs.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/jobs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="23" column="60" lean-forward="false" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
+            <state relative-caret-position="344">
+              <caret line="30" column="31" lean-forward="false" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -105,8 +118,8 @@
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/css/mainStyles.css" />
         <option value="$PROJECT_DIR$/Main.html" />
-        <option value="$PROJECT_DIR$/Jobs.html" />
         <option value="$PROJECT_DIR$/css/jobsStyles.css" />
+        <option value="$PROJECT_DIR$/Jobs.html" />
         <option value="$PROJECT_DIR$/js/jobs.js" />
       </list>
     </option>
@@ -219,7 +232,7 @@
       <workItem from="1513866007270" duration="32000" />
       <workItem from="1513866097625" duration="30624000" />
       <workItem from="1514043285722" duration="22857000" />
-      <workItem from="1514072533268" duration="28296000" />
+      <workItem from="1514072533268" duration="36573000" />
     </task>
     <task id="LOCAL-00001" summary="The first">
       <created>1509314720821</created>
@@ -368,11 +381,18 @@
       <option name="project" value="LOCAL" />
       <updated>1514100947200</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Потихоньку делаю чтоб все работало">
+      <created>1514106077281</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1514106077281</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149891000" />
+    <option name="totallyTimeSpent" value="158168000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -442,7 +462,8 @@
     <MESSAGE value="Заглушки" />
     <MESSAGE value="Поиск работ из окошка, заебись!" />
     <MESSAGE value="Наконец-то красивый поиск!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Наконец-то красивый поиск!" />
+    <MESSAGE value="Потихоньку делаю чтоб все работало" />
+    <option name="LAST_COMMIT_MESSAGE" value="Потихоньку делаю чтоб все работало" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -891,20 +912,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="69" column="0" lean-forward="true" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding>
-            <marker date="1514101605135" expanded="true" signature="2539:2589" ph="..." />
-            <marker date="1514101605135" expanded="true" signature="2648:2659" ph="..." />
-            <marker date="1514101605135" expanded="true" signature="2960:2995" ph="..." />
-            <marker date="1514101605135" expanded="true" signature="2960:3012" ph="..." />
-            <marker date="1514101605135" expanded="true" signature="3071:3082" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Main.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
@@ -922,26 +929,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Jobs.html">
+    <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="50" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="50" />
-          <folding />
+        <state relative-caret-position="323">
+          <caret line="69" column="0" lean-forward="true" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding>
+            <marker date="1514101605135" expanded="true" signature="2539:2589" ph="..." />
+            <marker date="1514101605135" expanded="true" signature="2648:2659" ph="..." />
+            <marker date="1514101605135" expanded="true" signature="2960:2995" ph="..." />
+            <marker date="1514101605135" expanded="true" signature="2960:3012" ph="..." />
+            <marker date="1514101605135" expanded="true" signature="3071:3082" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/jobsStyles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="42" column="15" lean-forward="false" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
+        <state relative-caret-position="300">
+          <caret line="73" column="1" lean-forward="true" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jobs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="44" lean-forward="false" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/jobs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="23" column="60" lean-forward="false" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
+        <state relative-caret-position="344">
+          <caret line="30" column="31" lean-forward="false" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
           <folding />
         </state>
       </provider>

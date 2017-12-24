@@ -61,33 +61,37 @@
     font-weight:bold;
     font-size: 30px;
     outline: none;
+    display: none;
 }
 #main-content_search-button:hover {
     color: greenyellow;
 }
 
 .main-content_results {
-    border: 0px solid black;
     padding: 0 10px;
+    left: inherit;
+    display: none;
 }
 .result {
-    border: 0px solid dodgerblue;
     padding: 10px;
     margin: 20px 0;
     font-size: 20px;
 }
-.main-content_tags {
-    border: 0px solid greenyellow;
-    padding: 10px 0;
+#main-content_tags {
+    width: 530px;
+    position: absolute;
+    left: inherit;
+    top: inherit;
 }
 .tag {
     font-family: Arial;
-    background-color: #EFDA39;
     background-color: #589180;
     padding: 5px 7px;
     border-radius: 1px;
     color: white;
     font-size: 18px;
+    display: inline-block;
+    margin: 4px 0 0 0;
 }
 .tag_close {
     background-color: rgba(14, 253, 163, 0);
