@@ -171,15 +171,15 @@
     padding-left: 15px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
-#search_result {
+#search_results {
     display: none;
     width: 85%;
     padding: 10px 10px;
     background-color: #434A5B;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 .search_link {

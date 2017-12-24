@@ -81,11 +81,11 @@ function search_keyup(search) {
         }
     });
 
-    document.getElementById("search_result").innerHTML = result;
+    document.getElementById("search_results").innerHTML = result;
     if (result == "" || search.value.length == 0)
-        document.getElementById("search_result").style.display = 'none';
+        document.getElementById("search_results").style.display = 'none';
     else
-        document.getElementById("search_result").style.display = 'block';
+        document.getElementById("search_results").style.display = 'block';
 }
 
 

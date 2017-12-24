@@ -14,3 +14,12 @@ window.onload = function ready() {
         }
     }
 }
+
+function startTyping(input) {
+    document.getElementById("main-content_search-button").style.display = 'block';
+}
+
+function quryEnter() {
+    var text = document.getElementById("main-content_search").value;
+    document.getElementById("search-head").innerHTML = text;
+}

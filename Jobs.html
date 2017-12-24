@@ -15,11 +15,14 @@
                 <h1 id="search-head">Поиск вакансий</h1>
 
                 <div class="main-content_search-container">
-                    <input class="main-content_search" type="text" placeholder="Искать здесь..." />
+                    <input id="main-content_search" type="text" placeholder="Искать здесь..." onkeyup="startTyping(this) on" />
+                    <button id="main-content_search-button" onclick="quryEnter()">+</button>
                 </div>
 
                 <div class="main-content_tags">
-                    tag1, tag2, tag3
+                    <span class="tag">Wed <button class="tag_close">x</button></span>
+                    <span class="tag">Development <button class="tag_close">x</button></span>
+                    <span class="tag">Junior <button class="tag_close">x</button></span>
                 </div>
 
                 <div class="main-content_results">
