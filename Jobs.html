@@ -6,17 +6,47 @@
     <link rel="stylesheet" href="css\jobsStyles.css" />
 </head>
 <body>
+    <script type="text/javascript" src="js/vanancies.js"></script>
     <script type="text/javascript" src="js/jobs.js" ></script>
-    <div style="text-align: center; position: absolute; top: 0; width: 100%; left: 0">
-        <div style="display: inline-block; text-align: left; border: 1px solid black; height: 500px">
 
-            <h1 id="text">Поиск вакансий</h1>
-            <p>
-                <form>
-                    <input id="search" type="text" placeholder="Искать здесь..." >
-                    <button type="submit">Искать</button>
-                </form>
-            </p>
+    <div class="page">
+        <div class="content">
+            <div class="main-content">
+                <h1 id="search-head">Поиск вакансий</h1>
+
+                <div class="main-content_search-container">
+                    <input class="main-content_search" type="text" placeholder="Искать здесь..." />
+                </div>
+
+                <div class="main-content_tags">
+                    tag1, tag2, tag3
+                </div>
+
+                <div class="main-content_results">
+                    <div class="result">
+                        Результат 1
+                    </div>
+                    <div class="result">
+                        Результат 2
+                    </div>
+                    <div class="result">
+                        Результат 3
+                    </div>
+                </div>
+            </div>
+            <div id="extend-content">
+                <div class="extend-content_panel">
+                    <p>
+                        Расширенные возможности<br>
+                        только для полноэкранной версии
+                    </p>
+                    <ul>
+                        <li>фильтр 1</li>
+                        <li>фильтр 2</li>
+                        <li>фильтр 3</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </body>

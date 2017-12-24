@@ -38,18 +38,22 @@ function showContent() {
     } else if (infoPageMode == 'jobs') {
         // <------ РАБОТА В СТРАНЕ ------
         this.document.getElementById("info-page_jobs-content").style.display = 'block';
-        //this.document.getElementById("info-page_jobs-content").style.src = 'Jobs.html?country=' + 'jpn';
         this.document.getElementById("info-page_jobs-content").contentWindow.location.href = 'Jobs.html?country=' + currentCountryId;
 
     } else if (infoPageMode == 'homes') {
         // <------ ЖИЛЬЕ В СТРАНЕ ------
         this.document.getElementById("info-page_homes-content").style.display = 'block';
-        this.document.getElementById("info-page_homes-content").innerHTML = "<img src='images/homes-prototype.png' style='width: 100%'>";
+        this.document.getElementById("info-page_homes-content").innerHTML =
+            "<div style='background-color: white; height: 100%; width: 100%'>" +
+            "<img src='images/homes-stub.png' style='width: 100%'>" +
+            "</div>";
     } else if (infoPageMode == 'visas') {
         // <------ ВИЗЫ В СТРАНЕ -------
         this.document.getElementById("info-page_visas-content").style.display = 'block';
-        this.document.getElementById("info-page_visas-content").style.background.color = "#33251a"; // <-- !!!
-        this.document.getElementById("info-page_visas-content").innerHTML = "<img src='images/visas-prototype.png' style='width: 100%'>";
+        this.document.getElementById("info-page_visas-content").innerHTML =
+            "<div style='background-color: #33251a; height: 100%; width: 100%'>" +
+            "<img src='images/visas-stub.png' style='width: 100%'>" +
+            "</div>";
     } else alert("ОШИБКА!");
 }
 

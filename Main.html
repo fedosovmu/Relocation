@@ -15,54 +15,52 @@
     <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
 </head>
 <body>
-
-<div class="container">
-    <div class="header"></div>
-        <!-------------------------- MENU --------------------------->
-    <div class="menu">
-        <input type="text" id="search" autocomplete="off" onkeyup="search_keyup(this)"/>
-        <div id="search_result">Russia</div>
-        <div style="padding: 20px 0px">
-            <div class="menu_item"><a href="#" onclick="openMap()"><u>Интерактивная карта</u></a></div>
-            <div class="menu_item"><a href="#" onclick="openJobs()">Работа</a></div>
-            <div class="menu_item"><a href="#">Жилье</a></div>
-            <div class="menu_item"><a href="#">Мои этапы</a></div>
+    <div class="container">
+        <div class="header"></div>
+            <!-------------------------- MENU --------------------------->
+        <div class="menu">
+            <input type="text" id="search" autocomplete="off" onkeyup="search_keyup(this)" placeholder="Искать здесь..."/>
+            <div id="search_result">Russia</div>
+            <div style="padding: 20px 0px">
+                <div class="menu_item"><a href="#" onclick="openMap()">Интерактивная карта</a></div>
+                <div class="menu_item"><a href="#" onclick="openJobs()">Работа</a></div>
+                <div class="menu_item"><a style="color: #d4fcf8">Жилье</a></div>
+                <div class="menu_item"><a style="color: #d4fcf8">Мои этапы</a></div>
+            </div>
         </div>
-    </div>
-        <!------------------------- /MENU ---------------------------->
-    <div class="content">
-        <!------------------------- CONTENT -------------------------->
-        <div id='map'></div>
-        <script type="text/javascript" src="js/countries.js" ></script>
-        <script type="text/javascript" src="js/map.js" ></script>
-        <script type="text/javascript" src="js/main.js"></script>
-        <iframe id='jobs' src="Jobs.html" frameborder="0" style="display: none; height: 100%; width: 100%;">JOBS</iframe>
-        <!------------------------ /CONTENT -------------------------->
-    </div>
-        <!------------------------ INFO PAGE ------------------------->
-    <div id="info-page">
-        <div class="info-page_head">
-            <span id="info-page-name">| RUSSIA</span>
-            <span class="info-page_close" onclick="hide_info_page()"></span>
+            <!------------------------- /MENU ---------------------------->
+        <div class="content">
+            <!------------------------- CONTENT -------------------------->
+            <div id='map'></div>
+            <script type="text/javascript" src="js/countries.js" ></script>
+            <script type="text/javascript" src="js/map.js" ></script>
+            <script type="text/javascript" src="js/main.js"></script>
+            <iframe id='jobs' src="Jobs.html?countries=all" frameborder="0" style="display: none; height: 100%; width: 100%;">JOBS</iframe>
+            <!------------------------ /CONTENT -------------------------->
         </div>
-        <div> <!------ INFO PAGE MENU ------>
-            <ul class="info-page_menu">
-                <li id="info-page_info-item" class="menu_selected"><button class="info-page_button" onmousedown="infoItemClick()">ОСНОВНАЯ ИНФОРМАЦИЯ</button></li>
-                <li id="info-page_jobs-item"><button class="info-page_button" onmousedown="jobsItemClick()">РАБОТА</button></li>
-                <li id="info-page_homes-item"><button class="info-page_button" onmousedown="homesItemClick()">ЖИЛЬЕ</button></li>
-                <li id="info-page_visas-item"><button class="info-page_button" onmousedown="visasItemClick()">ВИЗЫ</button></li>
-            </ul>
-        </div> <!---- INFO PAGE CONTENT ---->
-        <div id="info-page_content">
-            <div id="info-page_info-content" style="display: none; height: 100%; width: 100%;">INFO</div>
-            <iframe id="info-page_jobs-content" src="Jobs.html" frameborder="0" style="display: none; height: 100%; width: 100%">JOBS</iframe>
-            <div id="info-page_homes-content" style="display: none; height: 100%; width: 100%;">HOMES</div>
-            <div id="info-page_visas-content" style="display: none; height: 100%; width: 100%;">VISAS</div>
+            <!------------------------ INFO PAGE ------------------------->
+        <div id="info-page">
+            <div class="info-page_head">
+                <span id="info-page-name">| RUSSIA</span>
+                <span class="info-page_close" onclick="hide_info_page()"></span>
+            </div>
+            <div> <!------ INFO PAGE MENU ------>
+                <ul class="info-page_menu">
+                    <li id="info-page_info-item" class="menu_selected"><button class="info-page_button" onmousedown="infoItemClick()">ОСНОВНАЯ ИНФОРМАЦИЯ</button></li>
+                    <li id="info-page_jobs-item"><button class="info-page_button" onmousedown="jobsItemClick()">РАБОТА</button></li>
+                    <li id="info-page_homes-item"><button class="info-page_button" onmousedown="homesItemClick()">ЖИЛЬЕ</button></li>
+                    <li id="info-page_visas-item"><button class="info-page_button" onmousedown="visasItemClick()">ВИЗЫ</button></li>
+                </ul>
+            </div> <!---- INFO PAGE CONTENT ---->
+            <div id="info-page_content">
+                <div id="info-page_info-content" style="display: none; height: 100%; width: 100%;">INFO</div>
+                <iframe id="info-page_jobs-content" src="Jobs.html" frameborder="0" style="display: none; height: 100%; width: 100%">JOBS</iframe>
+                <div id="info-page_homes-content" style="display: none; height: 100%; width: 100%;">HOMES</div>
+                <div id="info-page_visas-content" style="display: none; height: 100%; width: 100%;">VISAS</div>
+            </div>
+            <div class="info-page_basement"></div>
         </div>
-        <div class="info-page_basement"></div>
+            <!----------------------- /INFO PAGE -------------------------->
     </div>
-        <!----------------------- /INFO PAGE -------------------------->
-</div>
-
 </body>
 </html>
