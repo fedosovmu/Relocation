@@ -10,7 +10,7 @@ window.onload = function ready() {
         if (name == 'ALL') {
             document.getElementById("extend-content").style.display = 'block';
         } else {
-            document.getElementById("search-head").innerHTML = 'Поиск [' + name + ']';
+            document.getElementById("search-head").innerHTML = 'Поиск ' + name + '';
         }
     }
 }

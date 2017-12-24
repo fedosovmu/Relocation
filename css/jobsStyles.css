@@ -58,7 +58,7 @@
     color: white;
     background-color: rgba(163, 208, 195, 0);
     border: 0;
-    font-weight:bold;
+    font-weight: bold;
     font-size: 30px;
     outline: none;
     display: none;
@@ -67,22 +67,16 @@
     color: greenyellow;
 }
 
-.main-content_results {
-    padding: 0 10px;
-    left: inherit;
-    display: none;
-}
-.result {
-    padding: 10px;
-    margin: 20px 0;
-    font-size: 20px;
-}
-#main-content_tags {
-    width: 530px;
+
+
+.tags-results {
+    width: 520px;
     position: absolute;
     left: inherit;
     top: inherit;
 }
+#main-content_tags {  }
+
 .tag {
     font-family: Arial;
     background-color: #589180;
@@ -104,4 +98,18 @@
 }
 .tag_close:hover {
     color: red;
+}
+
+.main-content_results {
+    padding: 0;
+}
+.result {
+    margin: 20px 0;
+    font-size: 20px;
+}
+.result_caption {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 25px;
+    color: #396658;
 }
