@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0d145d4c-a1fe-4bfe-b50d-f63453440b06" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Jobs.html" afterPath="$PROJECT_DIR$/Jobs.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/jobsStyles.css" afterPath="$PROJECT_DIR$/css/jobsStyles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jobs.js" afterPath="$PROJECT_DIR$/js/jobs.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,11 +53,11 @@
       <file leaf-file-name="jobs.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/jobs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="652">
-              <caret line="66" column="12" lean-forward="true" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
+            <state relative-caret-position="454">
+              <caret line="60" column="4" lean-forward="false" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="4" />
               <folding>
-                <marker date="1514131127161" expanded="true" signature="2378:2393" ph="..." />
-                <marker date="1514131127161" expanded="true" signature="2528:2543" ph="..." />
+                <marker date="1514131731740" expanded="true" signature="2604:2619" ph="..." />
+                <marker date="1514131731740" expanded="true" signature="2754:2769" ph="..." />
               </folding>
             </state>
           </provider>
@@ -231,7 +229,7 @@
       <workItem from="1513866097625" duration="30624000" />
       <workItem from="1514043285722" duration="22857000" />
       <workItem from="1514072533268" duration="47518000" />
-      <workItem from="1514128168236" duration="2985000" />
+      <workItem from="1514128168236" duration="3604000" />
     </task>
     <task id="LOCAL-00001" summary="The first">
       <created>1509314720821</created>
@@ -408,11 +406,18 @@
       <option name="project" value="LOCAL" />
       <updated>1514129136072</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Сортировка готова">
+      <created>1514131175881</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1514131175881</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="172098000" />
+    <option name="totallyTimeSpent" value="172717000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -486,7 +491,8 @@
     <MESSAGE value="Работающие теги" />
     <MESSAGE value="Загляните в vacancies.js" />
     <MESSAGE value="Нормальный дизайн поисковой выдачи" />
-    <option name="LAST_COMMIT_MESSAGE" value="Нормальный дизайн поисковой выдачи" />
+    <MESSAGE value="Сортировка готова" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сортировка готова" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -892,11 +898,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/jobs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="652">
-          <caret line="66" column="12" lean-forward="true" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
+        <state relative-caret-position="454">
+          <caret line="60" column="4" lean-forward="false" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="4" />
           <folding>
-            <marker date="1514131127161" expanded="true" signature="2378:2393" ph="..." />
-            <marker date="1514131127161" expanded="true" signature="2528:2543" ph="..." />
+            <marker date="1514131731740" expanded="true" signature="2604:2619" ph="..." />
+            <marker date="1514131731740" expanded="true" signature="2754:2769" ph="..." />
           </folding>
         </state>
       </provider>

@@ -10,7 +10,7 @@ window.onload = function ready() {
         if (id == 'ALL') {
             document.getElementById("extend-content").style.display = 'block';
         } else {
-            currentCountryId = id;
+            currentCountryId = id.toUpperCase();
             document.getElementById("search-head").innerHTML = 'Поиск ' + id + '';
         }
     }
@@ -58,6 +58,10 @@ function getResults() {
     if (tags.length == 0) return;
 
     var vacancies = vacanciesData;
+    
+    if (currentCountryId != "")
+        vacancies = vacancies.filter(function (t) { return t.id.toUpperCase() == currentCountryId; });
+
     tags.forEach(function (tag, i) {
         vacancies = vacancies.filter(function (item) { return item.name.toUpperCase().indexOf(tags[i].toUpperCase()) != -1 });
     });
@@ -65,6 +69,8 @@ function getResults() {
     vacancies.sort((function(a,b){
             return (a.salary < b.salary) ? 1:-1;
         }));
+
+    vacancies = vacancies.filter(function (t, i) { return i < 10; });
 
 
     vacancies.forEach(function (t) {
