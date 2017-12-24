@@ -16,7 +16,7 @@ function hide_info_page () {
     this.document.getElementById("info-page").style.display = 'none';
 }
 
-// <--- Обновляет контент на информационной панели, при переключении менюшки
+// <--- Обновляет контент на окне с информацией, при переключении менюшки
 function showContent() {
     // <--- Скрываем все панели с информацией
     this.document.getElementById("info-page_info-content").style.display = 'none';
@@ -36,16 +36,19 @@ function showContent() {
             "<p><b>Описание страны:</b> ?<br></p>" +
             "<b>Параметры:</b> id: " + currentCountryId + "<br>properties: " + JSON.stringify(properties);
     } else if (infoPageMode == 'jobs') {
-        // <--- РАБОТА В СТРАНЕ --------
+        // <------ РАБОТА В СТРАНЕ ------
         this.document.getElementById("info-page_jobs-content").style.display = 'block';
+        //this.document.getElementById("info-page_jobs-content").style.src = 'Jobs.html?country=' + 'jpn';
+        this.document.getElementById("info-page_jobs-content").contentWindow.location.href = 'Jobs.html?country=' + currentCountryId;
+
     } else if (infoPageMode == 'homes') {
-        // <--- ЖИЛЬЕ В СТРАНЕ ---------
+        // <------ ЖИЛЬЕ В СТРАНЕ ------
         this.document.getElementById("info-page_homes-content").style.display = 'block';
         this.document.getElementById("info-page_homes-content").innerHTML = "<img src='images/homes-prototype.png' style='width: 100%'>";
     } else if (infoPageMode == 'visas') {
-        // <--- ВИЗЫ В СТРАНЕ ----------
+        // <------ ВИЗЫ В СТРАНЕ -------
         this.document.getElementById("info-page_visas-content").style.display = 'block';
-        this.document.getElementById("info-page_visas-content").style.background.color = "#33251a";
+        this.document.getElementById("info-page_visas-content").style.background.color = "#33251a"; // <-- !!!
         this.document.getElementById("info-page_visas-content").innerHTML = "<img src='images/visas-prototype.png' style='width: 100%'>";
     } else alert("ОШИБКА!");
 }
@@ -83,7 +86,7 @@ function search_keyup(search) {
 
 
 
-// <--- Обработка событий менюшки информационной панели
+// <--- Обработка событий менюшки окна с информацией
 var infoPageMode = 'info';
 function resetInfoPageSelection() {
     document.getElementById("info-page_info-item").className="";
