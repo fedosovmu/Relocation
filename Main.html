@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TimeToGo</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin=""/>
+    <link rel="stylesheet" href="css\styles.css" />
+    <link rel="stylesheet" href="css\mainstyles.css" />
+
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="header"></div>
+        <!-------------------------- MENU --------------------------->
+    <div class="menu">
+        <input type="text" id="search" autocomplete="off" onkeyup="search_keyup(this)"/>
+        <div id="search_result">Russia</div>
+        <div style="padding: 20px 0px">
+            <div class="menu_item"><a href="#" onclick="openMap()"><u>Интерактивная карта</u></a></div>
+            <div class="menu_item"><a href="#" onclick="openJobs()">Работа</a></div>
+            <div class="menu_item"><a href="#">Жилье</a></div>
+            <div class="menu_item"><a href="#">Мои этапы</a></div>
+        </div>
+    </div>
+        <!------------------------- /MENU ---------------------------->
+    <div class="content">
+        <!------------------------- CONTENT -------------------------->
+        <div id='map'></div>
+        <script type="text/javascript" src="js/countries.js" ></script>
+        <script type="text/javascript" src="js/map.js" ></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <iframe id='jobs' src="Jobs.html" frameborder="0" style="display: none; height: 100%; width: 100%;">JOBS</iframe>
+        <!------------------------ /CONTENT -------------------------->
+    </div>
+        <!------------------------ INFO PAGE ------------------------->
+    <div id="info-page">
+        <div class="info-page_head">
+            <span id="info-page-name">| RUSSIA</span>
+            <span class="info-page_close" onclick="hide_info_page()"></span>
+        </div>
+        <div>
+            <ul class="info-page_menu">
+                <li id="info-page_info-item" class="menu_selected"><button class="info-page_button" onmousedown="infoItemClick()">ОСНОВНАЯ ИНФОРМАЦИЯ</button></li>
+                <li id="info-page_jobs-item"><button class="info-page_button" onmousedown="jobsItemClick()">РАБОТА</button></li>
+                <li id="info-page_homes-item"><button class="info-page_button" onmousedown="homesItemClick()">ЖИЛЬЕ</button></li>
+                <li id="info-page_visas-item"><button class="info-page_button" onmousedown="visasItemClick()">ВИЗЫ</button></li>
+            </ul>
+        </div>
+        <div id="info-page_content">
+            <div id="info-page_info-content" style="display: none; height: 100%; width: 100%;"></div>
+            <iframe id="info-page_jobs-content" src="Jobs.html" frameborder="0" style="display: none; height: 100%; width: 100%;">JOBS</iframe>
+            <div id="info-page_homes-content" style="display: none; height: 100%; width: 100%;"></div>
+            <div id="info-page_visas-content" style="display: none; height: 100%; width: 100%;"></div>
+        </div>
+        <div class="info-page_basement"></div>
+    </div>
+        <!----------------------- /INFO PAGE -------------------------->
+</div>
+
+</body>
+</html>

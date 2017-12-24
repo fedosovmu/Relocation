@@ -55,10 +55,6 @@
     font-size: 18px;
 }
 
-#info-page_content {
-    padding: 20px 20px;
-}
-
 .info-page_head {
     weight: 100%;
     background-color: #a5e4e0;
@@ -127,17 +123,28 @@
 }
 
 
-#info-item {
+#info-page_info-item {
     width: 25%;
 }
-#works-item {
+#info-page_jobs-item {
     width: 25%;
 }
-#homes-item {
+#info-page_homes-item {
 }
-#visas-item {
+#info-page_visas-item {
     float: right;
 }
+
+#info-page_content {
+    left: 0;
+    padding: 0px 0px;
+}
+#info-page_info-content {
+    padding: 20px 40px;
+}
+#info-page_jobs-content {  }
+#info-page_homes-content {  }
+#info-page_visas-content {  }
 
 
 .info-page_basement {
