@@ -56,12 +56,17 @@ function printTags() {
 function getResults() {
     document.getElementById("main-content_results").innerHTML = '';
 
-    if (tags.length == 0) return;
+    if (tags.length == 0) {
+        document.getElementById("extend-content").innerHTML = '<div class="extend-content_panel"></div>';
+        return;
+    }
 
     var vacancies = vacanciesData;
 
-    if (currentCountryId != "")
+    if (currentCountryId != "") {
         vacancies = vacancies.filter(function (t) { return t.id.toUpperCase() == currentCountryId; });
+    }
+
 
     tags.forEach(function (tag, i) {
         vacancies = vacancies.filter(function (item) { return item.name.toUpperCase().indexOf(tags[i].toUpperCase()) != -1 });
@@ -93,8 +98,14 @@ function getResults() {
     codes.sort();
     codes.forEach(function (id) {
         var count = 0;
-        vacancies.forEach( function (t) { if (t.id.toUpperCase() == id) count += 1; });
-        result += '<b>' + id + '</b> - ' + count + '<br>';
+        var sum = 0;
+        vacancies.forEach( function (t) {
+            if (t.id.toUpperCase() == id) {
+                count += 1;
+                sum += t.salary;
+            }
+        });
+        result += '<b>' + id + '</b> (' + count + ') ' + sum / count + '<br>';
     })
 
     result += '</div>'
@@ -103,7 +114,7 @@ function getResults() {
     document.getElementById("extend-content").innerHTML = result;
 
 
-    vacancies = vacancies.filter(function (t, i) { return i < 10; });
+    vacancies = vacancies.filter(function (t, i) { return i < 30; });
 
     vacancies.forEach(function (t) {
         var href =  t.href;
