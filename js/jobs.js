@@ -122,13 +122,13 @@ function getResults() {
 
         document.getElementById("main-content_results").innerHTML +=
             '<div class="result">' +
-            '    <div><a class="result_caption" href="' + t.href + '#">' + t.name + '</a></div>\n' +
+            '    <div><a class="result_caption" href="' + (t.href != undefined ? t.href :'#') + '">' + t.name + '</a></div>\n' +
             '    <div class="result-info-block">\n' +
             '        <div class="result_info1" style="max-width: 50%;">\n' +
-            '            ' + t.id + ', ' + t.city +
+            '            ' + t.id + ', ' + (t.city != undefined ? t.city : 'unknown city')+
             '        </div>\n' +
             '        <div class="result_info2" style="max-width: 50%;">\n' +
-            '            '+ t.company + ', ' + t.salary +
+            '            ' + (t.company != undefined ? t.company : 'unknown company') + ', ' + t.salary +
             '        </div>\n' +
             '    </div>' +
             '    <div class="result_text">' +
