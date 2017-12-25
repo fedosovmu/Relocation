@@ -122,7 +122,7 @@ function getResults() {
 
         document.getElementById("main-content_results").innerHTML +=
             '<div class="result">' +
-            '    <div><a class="result_caption" target="_blank" href="' + t.href + '#">' + t.name + '</a></div>\n' +
+            '    <div><a class="result_caption" href="' + t.href + '#">' + t.name + '</a></div>\n' +
             '    <div class="result-info-block">\n' +
             '        <div class="result_info1" style="max-width: 50%;">\n' +
             '            ' + t.id + ', ' + t.city +

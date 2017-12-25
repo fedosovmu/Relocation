@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0d145d4c-a1fe-4bfe-b50d-f63453440b06" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/map.js" afterPath="$PROJECT_DIR$/js/map.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jobs.js" afterPath="$PROJECT_DIR$/js/jobs.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,7 +38,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="682">
@@ -58,7 +57,7 @@
       <file leaf-file-name="Main.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
+            <state relative-caret-position="44">
               <caret line="34" column="75" lean-forward="true" selection-start-line="34" selection-start-column="75" selection-end-line="34" selection-end-column="75" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -77,9 +76,22 @@
       <file leaf-file-name="jobsStyles.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/jobsStyles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="110" column="15" lean-forward="false" selection-start-line="110" selection-start-column="1" selection-end-line="110" selection-end-column="15" />
+            <state relative-caret-position="660">
+              <caret line="117" column="20" lean-forward="true" selection-start-line="117" selection-start-column="20" selection-end-line="117" selection-end-column="20" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jobs.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/jobs.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="124" column="48" lean-forward="false" selection-start-line="124" selection-start-column="48" selection-end-line="124" selection-end-column="48" />
+              <folding>
+                <marker date="1514186242987" expanded="true" signature="4042:4057" ph="..." />
+                <marker date="1514186242987" expanded="true" signature="4204:4219" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -128,11 +140,11 @@
         <option value="$PROJECT_DIR$/css/mainStyles.css" />
         <option value="$PROJECT_DIR$/Jobs.html" />
         <option value="$PROJECT_DIR$/Admin.html" />
-        <option value="$PROJECT_DIR$/js/jobs.js" />
         <option value="$PROJECT_DIR$/css/jobsStyles.css" />
         <option value="$PROJECT_DIR$/Main.html" />
         <option value="$PROJECT_DIR$/js/map.js" />
         <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/js/jobs.js" />
       </list>
     </option>
   </component>
@@ -245,7 +257,7 @@
       <workItem from="1513866097625" duration="30624000" />
       <workItem from="1514043285722" duration="22857000" />
       <workItem from="1514072533268" duration="47518000" />
-      <workItem from="1514128168236" duration="20509000" />
+      <workItem from="1514128168236" duration="20715000" />
     </task>
     <task id="LOCAL-00001" summary="The first">
       <created>1509314720821</created>
@@ -450,11 +462,18 @@
       <option name="project" value="LOCAL" />
       <updated>1514139884463</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="GDP Второй филтр готов">
+      <created>1514186085876</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1514186085876</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="189622000" />
+    <option name="totallyTimeSpent" value="189828000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -507,7 +526,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="The first" />
     <MESSAGE value="Release one" />
     <MESSAGE value="redirect" />
     <MESSAGE value="New Design" />
@@ -532,7 +550,8 @@
     <MESSAGE value="Нормальный фильтр стран" />
     <MESSAGE value="Панелька со средними значениями при поиске" />
     <MESSAGE value="Панелька со средними значениями доделана" />
-    <option name="LAST_COMMIT_MESSAGE" value="Панелька со средними значениями доделана" />
+    <MESSAGE value="GDP Второй филтр готов" />
+    <option name="LAST_COMMIT_MESSAGE" value="GDP Второй филтр готов" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -927,29 +946,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/jobs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="59" column="105" lean-forward="true" selection-start-line="59" selection-start-column="105" selection-end-line="59" selection-end-column="105" />
-          <folding>
-            <marker date="1514139708788" expanded="true" signature="4058:4073" ph="..." />
-            <marker date="1514139708788" expanded="true" signature="4220:4235" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/countries.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32714">
           <caret line="149" column="0" lean-forward="false" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/jobsStyles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="110" column="15" lean-forward="false" selection-start-line="110" selection-start-column="1" selection-end-line="110" selection-end-column="15" />
           <folding />
         </state>
       </provider>
@@ -976,7 +976,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
+        <state relative-caret-position="44">
           <caret line="34" column="75" lean-forward="true" selection-start-line="34" selection-start-column="75" selection-end-line="34" selection-end-column="75" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1001,6 +1001,25 @@
             <marker date="1514186020435" expanded="true" signature="3228:3263" ph="..." />
             <marker date="1514186020435" expanded="true" signature="3228:3280" ph="..." />
             <marker date="1514186020435" expanded="true" signature="3339:3350" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/jobsStyles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="117" column="20" lean-forward="true" selection-start-line="117" selection-start-column="20" selection-end-line="117" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jobs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="124" column="48" lean-forward="false" selection-start-line="124" selection-start-column="48" selection-end-line="124" selection-end-column="48" />
+          <folding>
+            <marker date="1514186242987" expanded="true" signature="4042:4057" ph="..." />
+            <marker date="1514186242987" expanded="true" signature="4204:4219" ph="..." />
           </folding>
         </state>
       </provider>
