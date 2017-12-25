@@ -27,14 +27,9 @@ info.addTo(map);
 
 
 // get color depending on Human Development Index value
-function getColorOld(d) {
-    return d > 0.8 ? '#003399' :
-        d > 0.5  ? '#3072d9' :
-            d > 0  ? '#a8c3ff' :
-                '#808080';
-}
 
-function getColor(d) {
+function getScaleHdi() { return [1, 0.9, 0.85, 0.80, 0.75, 0.7, 0.65, 0.60, 0.55, 0.50, 0.45, 0.40]; };
+function getColorHdi(d) {
     return d > 0.9 ? '#003c00' :
         d > 0.85  ? '#007f00' :
         d > 0.80  ? '#00c400' :
@@ -47,20 +42,68 @@ function getColor(d) {
         d > 0.45  ? '#ff5b00' :
         d > 0.40  ? '#ff0000' :
         d > 0.35  ? '#a70000' :
-        d > 0  ? '#a70000' :
+        d > 0  ? '#a70000' : '#808080';
+}
+
+function getScaleGdp() { return [80000, 65000, 50000, 37000, 25000, 12000, 10000, 6000, 1000, 0]; };
+function getColorGdp(d) {
+    return d > 80000 ? '#660000' :
+        d > 65000  ? '#7c0e50' :
+        d > 50000  ? '#841d8b' :
+        d > 37000  ? '#682d9d' :
+        d > 25000  ? '#5148af' :
+        d > 12000  ? '#597abf' :
+        d > 10000  ? '#6eadcc' :
+        d > 6000  ? '#8bdbcf' :
+        d > 1000  ? '#abefc7' :
+        d > 0  ? '#c9fdcb' :
             '#808080';
 }
 
-function style(feature) {
-    return {
-        weight: 2,
-        opacity: 1,
-        color: 'white',
-        dashArray: '3',
-        fillOpacity: 0.7,
-        fillColor: getColor(feature.properties.hdi)
-    };
+function setHdi() {
+    getScale = getScaleHdi;
+    getColor = getColorHdi;
+    style = function (feature) {
+        return {
+            weight: 2,
+            opacity: 1,
+            color: 'white',
+            dashArray: '3',
+            fillOpacity: 0.7,
+            fillColor: getColorHdi(feature.properties.hdi)
+        };
+    }
 }
+
+function setGdp() {
+    getScale = getScaleGdp;
+    getColor = getColorGdp;
+    style = function (feature) {
+        return {
+            weight: 2,
+            opacity: 1,
+            color: 'white',
+            dashArray: '3',
+            fillOpacity: 0.85,
+            fillColor: getColorGdp(feature.properties.gdp)
+        };
+    }
+}
+
+
+// <--- Обрабатываем GET запрос
+var getRequest  = location.search;
+if (getRequest != '') {
+   var Mode = getRequest.split('?')[1].split('=')[1].toLowerCase();
+   if (Mode == 'gdp')
+       setGdp();
+   else
+       setHdi();
+} else setHdi();
+
+
+
+function style(feature) {}
 
 function highlightFeature(e) {
     var layer = e.target;
@@ -108,10 +151,15 @@ map.attributionControl.addAttribution('Population data &copy; <a href="http://ce
 
 var legend = L.control({position: 'bottomright'});
 
+function getScale() {
+    return [1, 0.9, 0.85, 0.80, 0.75, 0.7, 0.65, 0.60, 0.55, 0.50, 0.45, 0.40];
+}
+
+
 legend.onAdd = function (map) {
 
     var div = L.DomUtil.create('div', 'info legend'),
-        grades = [1, 0.9, 0.85, 0.80, 0.75, 0.7, 0.65, 0.60, 0.55, 0.50, 0.45, 0.40],
+        grades = getScale(),
         labels = [],
         from, to;
 
