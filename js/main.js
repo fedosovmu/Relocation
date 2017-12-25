@@ -32,8 +32,8 @@ function showContent() {
         this.document.getElementById("info-page_info-content").style.display = 'block';
         this.document.getElementById("info-page_info-content").innerHTML =
             "<h1>" + properties.name + "</h1>" +
-            "<p><a href='?country=hdi' onclick='setHdi();' title='Индекс человеческого развития'>ИЧР:</a> " + ((properties.hdi != undefined) ? properties.hdi : 'отсутствует') + "</p>" +
-            "<p><a href='?country=gdp' onclick='setGdp();' title='Валово́й вну́тренний проду́кт'>ВВП:</a> " + ((properties.gdp != undefined) ? properties.gdp : 'отсутствует') + "</p>" +
+            "<p><a href='?country=hdi-mode' onclick='setHdi();' title='Индекс человеческого развития'>ИЧР:</a> " + ((properties.hdi != undefined) ? properties.hdi : 'отсутствует') + "</p>" +
+            "<p><a href='?country=gdp-mode' onclick='setGdp();' title='Валово́й вну́тренний проду́кт'>ВВП:</a> " + ((properties.gdp != undefined) ? properties.gdp : 'отсутствует') + "</p>" +
             "<p><b>Описание страны:</b> " + ((properties.description != undefined) ? properties.description : 'отсутствует') + "<br></p>";
 
     } else if (infoPageMode == 'jobs') {

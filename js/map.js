@@ -95,7 +95,7 @@ function setGdp() {
 var getRequest  = location.search;
 if (getRequest != '') {
    var Mode = getRequest.split('?')[1].split('=')[1].toLowerCase();
-   if (Mode == 'gdp')
+   if (Mode == 'gdp-mode')
        setGdp();
    else
        setHdi();
